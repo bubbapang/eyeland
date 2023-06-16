@@ -4,14 +4,12 @@
 [ext_resource type="Texture2D" uid="uid://ck2cfky65hggq" path="res://addons/kenney_prototype_textures/orange/texture_01.png" id="2_kfixy"]
 [ext_resource type="Texture2D" uid="uid://b3got1kvmp645" path="res://addons/kenney_prototype_textures/red/texture_01.png" id="3_bwk6r"]
 [ext_resource type="Texture2D" uid="uid://bins8foiaure7" path="res://addons/kenney_prototype_textures/green/texture_01.png" id="4_dc2me"]
-[ext_resource type="PackedScene" uid="uid://ctrmnxopkebg0" path="res://scenes/player.tscn" id="5_6ud87"]
+[ext_resource type="PackedScene" uid="uid://blk6k8o6mu7f8" path="res://scenes/player.tscn" id="5_6ud87"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_84a5q"]
-sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_xs5qg"]
 
 [sub_resource type="Sky" id="Sky_tcarn"]
-sky_material = SubResource("ProceduralSkyMaterial_84a5q")
+sky_material = SubResource("PhysicalSkyMaterial_xs5qg")
 
 [sub_resource type="Environment" id="Environment_gqn1y"]
 background_mode = 2
@@ -73,3 +71,4 @@ use_collision = true
 size = Vector3(3, 3, 3)
 
 [node name="Player" parent="." instance=ExtResource("5_6ud87")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.11735, 0)
